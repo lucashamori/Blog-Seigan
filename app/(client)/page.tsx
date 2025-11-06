@@ -32,7 +32,7 @@ export default async function Home() {
   console.log(posts, 'posts');
   return (
     <div >
-      <Header title="Artigos"/>
+      <Header title="Sua Revolução Humana começa aqui"/>
       <div className={`${cardStyle}`}>
         {posts?.length > 0 && posts?.map((post) => (
           <PostComponent key={post?._id} post={post}/>

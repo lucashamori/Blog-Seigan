@@ -3,6 +3,7 @@ import { client } from '@/sanity/lib/client'
 import Header from '@/app/components/Header'
 import Link from 'next/link';
 import { PortableText } from 'next-sanity';
+import { richTextStyles } from '@/app/components/richTextStyles';
 
 interface Params {
     params: {
@@ -70,16 +71,3 @@ const page = async ({ params }: Promise<Params["params"]>) => {
 
 export default page
 
-export const richTextStyles = `
-  mt-14 
-  text-justify 
-  max-w-2xl 
-  m-auto
-  prose-heading:my-5 
-  prose-headings:text-2xl 
-  prose-p:mb-5
-  prose-p:leading-7 
-  prose-li:list-disc
-  prose-li:leading-7
-  prose-a:text-purple-500
-`;  
