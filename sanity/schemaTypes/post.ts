@@ -11,7 +11,6 @@ export const post = {
             name: 'title',
             title: 'Title',
             type: 'string',
-            validation: (Rule: Rule) => Rule.required().error('required'),
         },
         {
             name: 'slug',
@@ -21,27 +20,24 @@ export const post = {
                 source: 'title',
                 maxLength: 96,
             },
-            validation: (Rule: Rule) => Rule.required().error('required'),
         },
         {
             name: 'publishedAt',
             title: 'Published At',
             type: 'datetime',
             initialValue: (new Date()).toISOString(),
-            validation: (Rule: Rule) => Rule.required().error('required'),
         },
         {   
             name: 'excerpt',
             title: 'Excerpt',
             type: 'text',
-            validation: (Rule: Rule) => Rule.required().error('required'),
         },
         {
             name: 'body',
             title: 'Body',
             type: 'array',
             of: [{ type: 'block' }],
-            validation: (Rule: Rule) => Rule.required().error('required'),
+            
         },
         {
             name: 'tags',

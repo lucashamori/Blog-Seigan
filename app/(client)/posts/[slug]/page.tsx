@@ -46,7 +46,8 @@ const page = async ({ params }: PageProps) => {
             })}
         </span>
         <div className='mt-5'>
-            {post?.tags?.map((tag)=> 
+            {post?.tags?.map((tag: { _id: string; name: string; slug: { current: string } }) =>
+
             <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
                 <span className='mr-2 p-1 text-sm lowercase text-neutral-100 text-light-300 '>
                     #{tag?.name}
