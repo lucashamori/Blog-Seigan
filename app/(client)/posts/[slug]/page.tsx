@@ -1,14 +1,11 @@
-
 import { client } from '@/sanity/lib/client'
 import Header from '@/app/components/Header'
 import Link from 'next/link';
 import { PortableText } from 'next-sanity';
 import { richTextStyles } from '@/app/components/richTextStyles';
 
-interface Params {
-    params: {
-        slug: string;
-    }
+interface PageProps {
+  params: Promise<{ slug: string }>
 }
 
 async function getPost(slug:string) {
@@ -31,7 +28,7 @@ return post;
 
 }
 
-const page = async ({ params }: Promise<Params["params"]>) => {
+const page = async ({ params }: PageProps) => {
   const resolvedParams = await params
   const slug = resolvedParams.slug
   console.log(slug, 'slug')
@@ -69,5 +66,4 @@ const page = async ({ params }: Promise<Params["params"]>) => {
   )
 }
 
-export default page
-
+export default page;
