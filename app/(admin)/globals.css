@@ -1,0 +1,31 @@
+/* 1) importa preflight (substitui @tailwind base) */
+@import "tailwindcss/preflight";
+
+/* 2) registra as custom variants para dark e light (necessário em v4) */
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+/* 3) importa tema e utilities */
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+/* 4) estilos base dentro de @layer base para usar theme() e garantir prioridade */
+@layer base {
+  /* Forçar color-scheme para navegador */
+  html { color-scheme: light; }
+  html.dark { color-scheme: dark; }
+
+  /* Estilos padrão (light) */
+  body {
+    background-color: theme('colors.white');
+    color: theme('colors.black');
+    transition-property: color, background-color;
+    transition-duration: 300ms;
+  }
+
+  /* Estilos quando html tiver .dark */
+  html.dark body {
+    background-color: theme('colors.black');
+    color: theme('colors.white');
+  }
+}
