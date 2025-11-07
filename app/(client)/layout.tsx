@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" suppressHydrationWarning>
       <body
-        className={`${firaCode.variable} ${firaCode.variable} h-full bg-neutral-100 text-neutral-950 dark:bg-neutral-800 dark:text-neutral-50 dark:selection:bg-purple-500`}>
+        className={`${firaCode.variable} ${firaCode.variable} h-full bg-stone-100 text-neutral-800 dark:bg-neutral-800 dark:text-neutral-50 dark:selection:bg-purple-500`}>
         <Provider>
           <Navbar/>
             <main className="mx-auto max-w-5xl px-6">
