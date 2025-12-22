@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Seigan: Tecnologia para a Revolução Humana
 
-## Getting Started
+O **Seigan** (do japonês: "Grande Voto") é um blog minimalista desenvolvido para democratizar o acesso aos ensinamentos do **Budismo de Nichiren Daishonin**. Este projeto representa a intersecção entre minha sensibilidade estética como **Arquiteto** e minha evolução técnica como **Desenvolvedor de Sistemas**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## O Propósito do Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A ideia do Seigan nasceu da vontade de criar um "templo digital" — um espaço onde a sabedoria budista pudesse ser acessada de forma gratuita, clara e livre de distrações visuais. Como estou em transição de carreira, utilizei este blog para aplicar conceitos que estou aprendendo no **SENAC**, transformando teoria em uma ferramenta real de impacto social.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## O que aprendi construindo o Seigan?
 
-## Learn More
+Neste projeto, foquei em resolver problemas reais de experiência do usuário (**UX**) e desenvolvimento:
 
-To learn more about Next.js, take a look at the following resources:
+* **Design com Intenção**: Apliquei conceitos de arquitetura para criar um layout com "respiro". Removi bordas e caixas desnecessárias no sistema de busca para criar uma interface "naked", onde apenas o essencial permanece.
+* **Resolução de Problemas no Mobile**: Identifiquei que a barra de busca "quebrava" a tela em celulares ao abrir. Aprendi a criar um sistema de **Overlay**, onde a busca assume temporariamente o topo da tela, garantindo que o usuário consiga pesquisar sem erros de visualização.
+* **Foco no Leitor**: Desenvolvi um algoritmo para calcular o **tempo de leitura estimado** e uma **barra de progresso** no topo do post. Essas funcionalidades ajudam o leitor a se organizar melhor durante estudos profundos sobre filosofia.
+* **Performance Inteligente**: Utilizei **Sanity.io** para gerenciar o conteúdo e **Next.js** para garantir que o site carregue de forma quase instantânea. Também aprendi a manipular cores de logos dinamicamente via CSS (mask-image), deixando o site mais leve.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tecnologias Utilizadas
 
-## Deploy on Vercel
+* **Next.js & TypeScript**: Para criar um site rápido e com código seguro.
+* **Tailwind CSS**: Para o design responsivo e minimalista.
+* **Sanity (CMS)**: Onde gerencio todos os textos e ensinamentos do blog.
+* **Lucide React**: Ícones sutis que complementam a interface.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Sobre o Desenvolvedor
+
+**Lucas Mori**
+Sou formado em **Arquitetura e Urbanismo** e atualmente estudo **Desenvolvimento de Sistemas no SENAC**. Acredito que a tecnologia, assim como a arquitetura, deve ser projetada para servir e elevar as pessoas.
+
+* **Interesses**: Desenvolvimento Web (Next.js, TS), UX/UI Design e plataforma **Salesforce** (Apex e LWC).
+* **Portfólio no GitHub**: [github.com/lucashamori/Portfolio](https://github.com/lucashamori/Portfolio).
+
+---
+
+> *"Projetar é um ato de cuidado, seja em um prédio de concreto ou em um sistema de linhas de código."*
