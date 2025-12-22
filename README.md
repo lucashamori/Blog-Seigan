@@ -36,7 +36,7 @@ Neste projeto, foquei em resolver problemas reais de experiência do usuário (*
 Sou formado em **Arquitetura e Urbanismo** e atualmente estudo **Desenvolvimento de Sistemas no SENAC**. Acredito que a tecnologia, assim como a arquitetura, deve ser projetada para servir e elevar as pessoas.
 
 * **Interesses**: Desenvolvimento Web (Next.js, TS), UX/UI Design e plataforma **Salesforce** (Apex e LWC).
-* **Portfólio no GitHub**: [github.com/lucashamori/Portfolio](https://github.com/lucashamori/Portfolio).
+* **Portfólio no GitHub**: [github.com/lucashamori/Portfolio](https://lucashamori.github.io/Portfolio/).
 
 ---
 
