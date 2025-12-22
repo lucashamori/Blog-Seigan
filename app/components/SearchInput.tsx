@@ -68,7 +68,7 @@ export default function SearchInput({ posts }: { posts: SearchPost[] }) {
           {results.map(post => (
             <Link 
               key={post.slug} 
-              href={`/post/${post.slug}`}
+              href={`/posts/${post.slug}`}
               className="block p-3 hover:bg-zinc-50 dark:hover:bg-zinc-800 border-b last:border-none border-zinc-100 dark:border-zinc-800"
               onClick={() => {
                 setQuery('');
