@@ -52,7 +52,7 @@ export default function SearchInput({ posts }: { posts: SearchPost[] }) {
         className="p-2 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
         aria-label="Procurar"
       >
-        {isOpen ? <X size={20} /> : <Search size={20} />}
+        {isOpen ? <X  /> : <Search  />}
       </button>
 
       {/* Resultados (Dropdown) */}
