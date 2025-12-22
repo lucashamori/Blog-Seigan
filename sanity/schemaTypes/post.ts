@@ -1,5 +1,5 @@
 import { init } from "next/dist/compiled/webpack/webpack";
-import { validation } from "sanity";
+
 
 export const post = {
     name: 'post',
@@ -48,3 +48,4 @@ export const post = {
 
     ],
 }
+
