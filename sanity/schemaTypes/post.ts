@@ -1,4 +1,4 @@
-import { init } from "next/dist/compiled/webpack/webpack";
+
 
 
 export const post = {
@@ -49,3 +49,13 @@ export const post = {
     ],
 }
 
+export function getSearchIndex() {
+  const allPosts = getAllPosts(); // Sua função existente que lê o diretório de posts
+  
+  return allPosts.map(post => ({
+    title: post.title,
+    description: post.description,
+    slug: post.slug,
+    tags: post.tags || [],
+  }));
+}
