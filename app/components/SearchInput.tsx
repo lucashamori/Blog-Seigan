@@ -104,7 +104,10 @@ export default function SearchInput({ posts }: { posts: SearchPost[] }) {
       {!isOpen && (
         <button 
           onClick={() => setIsOpen(true)}
-          className="p-2 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+          className="p-2 rounded-full transition-colors duration-200 
+             text-zinc-800 dark:text-zinc-200 
+             hover:text-purple-500 dark:hover:text-purple-300 
+             active:text-purple-600 dark:active:text-purple-400"
           aria-label="Procurar"
         >
           <Search   />
