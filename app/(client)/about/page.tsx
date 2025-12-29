@@ -97,10 +97,10 @@ export default function AboutPage() {
 
       {/* 05. NOTA LEGAL / DISCLAIMER */}
       <section className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8 md:gap-12 mt-40">
-        <span className="text-[10px] uppercase tracking-[0.5em] text-zinc-400 dark:text-zinc-200 font-bold pt-2 opacity-50">
+        <span className="text-[10px] uppercase tracking-[0.5em] text-zinc-800 dark:text-zinc-200 font-bold pt-2 opacity-50">
           Nota
         </span>
-        <div className="max-w-xl text-[13px] leading-relaxed text-zinc-400 dark:text-zinc-300 font-light">
+        <div className="max-w-xl text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-300 font-light">
           <p>
             Este é um projeto estritamente <strong className="font-medium">pessoal e independente</strong>, concebido como um laboratório de desenvolvimento técnico e aprofundamento espiritual individual. 
           </p>
